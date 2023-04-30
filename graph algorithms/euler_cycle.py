@@ -6,7 +6,7 @@ def is_euler_cycle(graph):
         for j in range(n):
             sum += graph[i][j]
             sum -= graph[j][i]
-        if sum != 0: # not directed: sum%2 == 0
+        if sum != 0:
             return False
     return True
 
