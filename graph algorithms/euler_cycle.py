@@ -12,6 +12,7 @@ def is_euler_cycle(graph):
 
 def remove_edge(graph, start, end):
     graph[start][end] = 0
+    # not directed: graph[end][start] = 0
 
 def DFS(graph, path, guardian, start=0):
     n = len(graph)
