@@ -1,4 +1,4 @@
-# Euler cycle, directed graph [ O(V^2) ]
+# Euler cycle [ O(V^2) ]
 def is_euler_cycle(graph):
     n = len(graph)
     for i in range(n):
