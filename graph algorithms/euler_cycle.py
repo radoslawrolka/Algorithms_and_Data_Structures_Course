@@ -1,12 +1,12 @@
-# Euler cycle [ O(V^2) ]
+# Euler cycle, directed graph [ O(V^2) ]
 def is_euler_cycle(graph):
     n = len(graph)
     for i in range(n):
         sum = 0
         for j in range(n):
             sum += graph[i][j]
-            sum -= graph[j][i]
-        if sum != 0:
+            sum -= graph[j][i] # not directed: this line does not exist
+        if sum != 0: # not directed: if sum%2 =! 0:
             return False
     return True
 
