@@ -16,7 +16,8 @@ def remove_edge(graph, start, end):
 
 def DFS(graph, path, guardian, start=0):
     n = len(graph)
-    for i in range(guardian[start], n):
+    i = guardian[start]
+    while guardian[start] < n:
         guardian[start] += 1
         if graph[start][i] == 1:
             remove_edge(graph, start, i)
