@@ -22,6 +22,7 @@ def DFS(graph, path, guardian, start=0):
         if graph[start][i] == 1:
             remove_edge(graph, start, i)
             DFS(graph, path, guardian, i)
+        i += 1
     path.append(start)
 
 def euler_cycle(graph, start=0):
