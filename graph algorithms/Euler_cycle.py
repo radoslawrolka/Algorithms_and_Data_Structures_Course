@@ -5,14 +5,13 @@ def is_euler_cycle(graph):
         sum = 0
         for j in range(n):
             sum += graph[i][j]
-            sum -= graph[j][i] # not directed: this line does not exist
-        if sum != 0: # not directed: if sum%2 =! 0:
+            sum -= graph[j][i]
+        if sum != 0:
             return False
     return True
 
 def remove_edge(graph, start, end):
     graph[start][end] = 0
-    # not directed: graph[end][start] = 0
 
 def DFS(graph, path, guardian, start=0):
     n = len(graph)
