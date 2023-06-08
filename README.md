@@ -8,4 +8,3 @@ Algorithms and data structures course at AGH UST
   - kolloquium 2
 - dynamic algorithms (7-9)
   - offline 7-9
-  - kolloquium 3
