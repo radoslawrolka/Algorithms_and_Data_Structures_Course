@@ -6,5 +6,5 @@ Algorithms and data structures course at AGH UST
 - graph algorithms (4-6)
   - offline 4-6
   - kolloquium 2
-- dynamic programming, greedy algorithms (7-9)
+- dynamic programming, greedy algorithms, structures (7-9)
   - offline 7-9
