@@ -1,3 +1,5 @@
+# maintains the hashmap filled in between 0.4 - 0.75 of the total capacity.
+# Node approach, faster to rehash whole hashmap
 from random import randint
 
 class Node:
@@ -31,14 +33,17 @@ class Hashmap:
         if com.next is None:
             self.array[self.hash_func(key)] = None
             self.full -= 1
+            self.reset_hash()
             return True
         if com.key == key:
             self.array[self.hash_func(key)] = com.next
+            self.reset_hash()
             return True
         while com is not None:
             if com.key == key:
                 prev.next = com.next
                 self.full -= 1
+                self.reset_hash()
                 return True
         return False
 
