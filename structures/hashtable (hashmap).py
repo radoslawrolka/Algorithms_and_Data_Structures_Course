@@ -37,6 +37,7 @@ class Hashmap:
             return True
         if com.key == key:
             self.array[self.hash_func(key)] = com.next
+            self.full -= 1
             self.reset_hash()
             return True
         while com is not None:
@@ -45,6 +46,8 @@ class Hashmap:
                 self.full -= 1
                 self.reset_hash()
                 return True
+            prev = com
+            com = com.next
         return False
 
     def insert(self, key, data):
@@ -111,5 +114,3 @@ class Hashmap:
                     com.next = None
                     com = nex
             self.array = new_array
-
-
