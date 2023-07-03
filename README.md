@@ -8,3 +8,4 @@ Algorithms and data structures course at AGH UST
   - kolloquium 2
 - dynamic programming, greedy algorithms, structures (7-9)
   - offline 7-9
+- final exam
